@@ -34,11 +34,12 @@ h1{
     font-weight: 900;
 }
 .lista li:not(:last-child){
-    margin-bottom: 0.5em ;
+    margin-bottom: 1em;
 }
 .cross{
     color: red;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .cross::after{
     content: "\2718";
@@ -46,6 +47,7 @@ h1{
 .check{
     color: green;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .check::after{
     content: "\2713";
@@ -56,6 +58,7 @@ h1{
 /* Sezione utente */
 .sezione-utente{
     background-color: darkcyan;
+    margin-top: 0rem;
 }
 .sezione-utente input{
     padding: 0.5em;

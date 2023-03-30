@@ -22,16 +22,18 @@
             <!-- Lista -->
             <ul class="lista">
                 <li v-for="(elemento,index) in toDoList">
-                    <p :class="elemento.done === false ? 'testo-sbarrato' : '' ">{{ elemento.text }}</p>
-                    <span :class="elemento.done === true ? 'check' : 'cross' "></span>
+                    <p :class="elemento.done === true ? 'testo-sbarrato' : '' ">{{ elemento.text }}</p>
+                    <span :class="elemento.done === true ? 'check' : 'cross' " @click="cambiaStato(index)"></span>
                 </li>
-                <div class="sezione-utente">
-                    <label for="todo"></label>
-                    <input type="text" name="todo" id="todo" placeholder="inserisci un nuovo todo" v-model.trim="nuovoToDoStringa">
-                    <button class="aggiungi" @click="aggiungiNuovoOggetto">Aggiungi</button>
-                </div>
             </ul>
             <!-- Fine lista  -->
+            <!-- Sezione utente -->
+            <div class="sezione-utente">
+                <label for="todo"></label>
+                <input type="text" name="todo" id="todo" placeholder="inserisci un nuovo todo" v-model.trim="nuovoToDoStringa">
+                <button class="aggiungi" @click="aggiungiNuovoOggetto">Aggiungi</button>
+            </div>
+            <!-- Fine sezione utente -->
         </div>
         <!-- FINE CONTAINER -->
     </div>

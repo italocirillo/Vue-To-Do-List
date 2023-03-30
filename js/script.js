@@ -33,5 +33,12 @@ createApp({
             this.toDoList.unshift({...nuovoOggetto});
             this.nuovoToDoStringa = "";
         },
+        cambiaStato(index){
+            if(this.toDoList[index].done === false){
+                this.toDoList[index].done = true;
+            }else{
+                this.toDoList[index].done = false;
+            }
+        }
     }
 }).mount("#app");
