@@ -1,31 +1,36 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: cornflowerblue;
 }
 
+
 /* MAIN */
-.container{
+.container {
     border: 5px solid black;
     width: 70%;
     margin: 0 auto;
     text-align: center;
 }
-h1{
+
+h1 {
     padding: 0.5em 0em;
     background-color: wheat;
 }
+
 /* Lista */
-.lista{
+.lista {
     list-style: none;
     border-top: 2px dashed black;
     font-family: 'Roboto Mono', monospace;
 }
-.lista li{
+
+.lista li {
     padding: 1em 1.5em;
     background-color: rgb(216, 238, 252);
     display: flex;
@@ -33,38 +38,47 @@ h1{
     align-items: center;
     font-weight: 900;
 }
-.lista li:not(:last-child){
+
+.lista li:not(:last-child) {
     margin-bottom: 1em;
 }
-.cross{
+
+.cross {
     color: red;
     font-size: 1.5rem;
     cursor: pointer;
 }
-.cross::after{
+
+.cross::after {
     content: "\2718";
 }
-.check{
+
+.check {
     color: green;
     font-size: 1.5rem;
     cursor: pointer;
 }
-.check::after{
+
+.check::after {
     content: "\2713";
 }
-.testo-sbarrato{
+
+.testo-sbarrato {
     text-decoration: line-through wavy;
 }
+
 /* Sezione utente */
-.sezione-utente{
+.sezione-utente {
     background-color: darkcyan;
     margin-top: 0rem;
 }
-.sezione-utente input{
+
+.sezione-utente input {
     padding: 0.5em;
     margin: 0.5em;
 }
-.aggiungi{
+
+.aggiungi {
     padding: 0.2em 0.8em;
     border-radius: 10px;
     background-color: rgb(58, 58, 58);

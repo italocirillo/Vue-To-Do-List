@@ -1,42 +1,42 @@
 const { createApp } = Vue;
 
 createApp({
-    data(){
-        return{
-            toDoList : [
+    data() {
+        return {
+            toDoList: [
                 {
-                    text : "fare la spesa",
-                    done : true,
+                    text: "fare la spesa",
+                    done: true,
                 },
                 {
-                    text : "fare gli esercizi",
-                    done : true,
+                    text: "fare gli esercizi",
+                    done: true,
                 },
                 {
-                    text : "portare fuori il cane",
-                    done : false,
+                    text: "portare fuori il cane",
+                    done: false,
                 },
                 {
-                    text : "leggere il libro",
-                    done : true,
+                    text: "leggere il libro",
+                    done: true,
                 },
             ],
-            nuovoToDoStringa : "",
+            nuovoToDoStringa: "",
         }
     },
-    methods:{
-        aggiungiNuovoOggetto(){
+    methods: {
+        aggiungiNuovoOggetto() {
             nuovoOggetto = {
                 text: this.nuovoToDoStringa,
                 done: false,
             }
-            this.toDoList.unshift({...nuovoOggetto});
+            this.toDoList.unshift({ ...nuovoOggetto });
             this.nuovoToDoStringa = "";
         },
-        cambiaStato(index){
-            if(this.toDoList[index].done === false){
+        cambiaStato(index) {
+            if (this.toDoList[index].done === false) {
                 this.toDoList[index].done = true;
-            }else{
+            } else {
                 this.toDoList[index].done = false;
             }
         }
