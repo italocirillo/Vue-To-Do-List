@@ -20,11 +20,18 @@ createApp({
                     text : "leggere il libro",
                     done : true,
                 },
-
-            ]
+            ],
+            nuovoToDoStringa : "",
         }
     },
     methods:{
-        
+        aggiungiNuovoOggetto(){
+            nuovoOggetto = {
+                text: this.nuovoToDoStringa,
+                done: false,
+            }
+            this.toDoList.unshift({...nuovoOggetto});
+            this.nuovoToDoStringa = "";
+        },
     }
 }).mount("#app");

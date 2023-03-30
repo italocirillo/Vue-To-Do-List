@@ -22,9 +22,14 @@
             <!-- Lista -->
             <ul class="lista">
                 <li v-for="(elemento,index) in toDoList">
-                    <p>{{ elemento.text }}</p>
+                    <p :class="elemento.done === false ? 'testo-sbarrato' : '' ">{{ elemento.text }}</p>
                     <span :class="elemento.done === true ? 'check' : 'cross' "></span>
                 </li>
+                <div class="sezione-utente">
+                    <label for="todo"></label>
+                    <input type="text" name="todo" id="todo" placeholder="inserisci un nuovo todo" v-model.trim="nuovoToDoStringa">
+                    <button class="aggiungi" @click="aggiungiNuovoOggetto">Aggiungi</button>
+                </div>
             </ul>
             <!-- Fine lista  -->
         </div>

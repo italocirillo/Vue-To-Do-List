@@ -17,6 +17,7 @@ body{
 }
 h1{
     padding: 0.5em 0em;
+    background-color: wheat;
 }
 /* Lista */
 .lista{
@@ -48,4 +49,23 @@ h1{
 }
 .check::after{
     content: "\2713";
+}
+.testo-sbarrato{
+    text-decoration: line-through wavy;
+}
+/* Sezione utente */
+.sezione-utente{
+    background-color: darkcyan;
+}
+.sezione-utente input{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.aggiungi{
+    padding: 0.2em 0.8em;
+    border-radius: 10px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    cursor: pointer;
+
 }
