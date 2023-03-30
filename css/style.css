@@ -1,3 +1,51 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: cornflowerblue;
+}
+
+/* MAIN */
+.container{
+    border: 5px solid black;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    padding: 0.5em 0em;
+}
+/* Lista */
+.lista{
+    list-style: none;
+    border-top: 2px dashed black;
+    font-family: 'Roboto Mono', monospace;
+}
+.lista li{
+    padding: 1em 1.5em;
+    background-color: rgb(216, 238, 252);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+}
+.lista li:not(:last-child){
+    margin-bottom: 0.5em ;
+}
+.cross{
+    color: red;
+    font-size: 1.5rem;
+}
+.cross::after{
+    content: "\2718";
+}
+.check{
+    color: green;
+    font-size: 1.5rem;
+}
+.check::after{
+    content: "\2713";
 }
